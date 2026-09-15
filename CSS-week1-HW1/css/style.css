@@ -1,131 +1,59 @@
-/* ===== Reset básico ===== */
-* {
-  box-sizing: border-box;
-}
-
-/* ===== Tipografía general ===== */
 body {
-  font-family: 'Trebuchet MS', 'Gill Sans', Arial, sans-serif;
+  font-family: 'trebuchet MS', 'Gill Sans, sans-serif';
   font-size: 105%;
   margin: 0;
-  color: #1d3557;
-  background-color: #f4f6f7;
-  line-height: 1.6;
 }
 
-/* ===== Header ===== */
-header {
+header{
   background-color: #a8dadc;
-  padding: 28px 20px;
+  padding: 10px 0;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #1d3557;
-  letter-spacing: 1px;
-}
-
-/* ===== Navegación ===== */
-nav {
+nav{
   background-color: #1d3557;
 }
 
-nav ul {
+nav ul{
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-nav li {
-  display: inline-block;
-  width: auto;
-  text-align: center;
-}
-
-nav li a {
-  display: block;
-  padding: 16px 22px;
-  color: #f1faee;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.95rem;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-nav li a:hover,
-nav li a:focus {
+nav li a{
   background-color: #457b9d;
-  color: #ffffff;
 }
 
-/* ===== Contenido principal ===== */
-main {
-  background-color: #ffffff;
-  font-size: 1rem;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+main{
+   background-color: #f1faee;
+   font-size: 100%;
+   padding: 20px;
 }
 
-main h2 {
-  color: #1d3557;
-  border-bottom: 2px solid #a8dadc;
-  padding-bottom: 8px;
-  margin-top: 0;
+main.grid div{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 8px;
 }
 
-main img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 12px 0;
+main.flex div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-main a {
-  color: #457b9d;
-  font-weight: bold;
+footer{
+  background-color: #e0e0e0;
+  padding: 10px;
+  font-size: 85%;
 }
 
-main a:hover {
-  color: #1d3557;
-}
-
-p {
-  line-height: 1.7;
-  margin: 0 0 16px 0;
-}
-
-/* ===== Footer ===== */
-footer {
-  background-color: #a8dadc;
+h1{
   text-align: center;
-  padding: 18px 0;
-  font-size: 0.85rem;
+  font-family: 'Georgia', serif;
   color: #1d3557;
-  margin-top: 30px;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  nav li a {
-    padding: 12px 14px;
-    font-size: 0.85rem;
-  }
-
-  main {
-    margin: 20px 10px;
-    padding: 20px;
-  }
+p{
+  line-height: 1.6;
 }
