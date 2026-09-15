@@ -6,11 +6,11 @@ body{
 
 li{
   display: inline-block;
-    width: 265px;
+    width: 250px;
     text-align: center;
-    height: 230px;
-    background: yellow;
-    line-height: 9;
+    height: 180px;
+    background: #545267b5;
+    line-height: 11;
 }
 
 body {
