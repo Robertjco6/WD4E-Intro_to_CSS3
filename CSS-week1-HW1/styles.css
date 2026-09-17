@@ -14,7 +14,7 @@ main {
 }
 
 h1 {
-    color: #176b4d;
+    color: #2825f1;
 }
 
 p {
@@ -27,7 +27,7 @@ nav {
     justify-content: center;
     gap: 30px;
     padding: 18px;
-    background-color: #176b4d;
+    background-color: #2e79b3;
 }
 
 nav a {
